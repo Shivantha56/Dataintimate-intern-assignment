@@ -24,13 +24,14 @@ const sequelize = new Sequelize('candidate_dilshan_shivantha', 'root', '1234', {
 // }
 
 export default class User extends Model<InferAttributes<User>, InferCreationAttributes<User>> {
-    declare id: CreationOptional<number>
-    declare fName: CreationOptional<string>
-    declare lName: CreationOptional<string>
-    declare email: CreationOptional<string>
-    declare phoneNumber: CreationOptional<number>
-    declare nic: CreationOptional<string>
-    declare avatar: CreationOptional<string>
+    declare id: CreationOptional<string>
+    declare fName: string
+    declare lName: string
+    declare email: string
+    declare phoneNumber: number
+    declare nic: string
+    declare password: string
+    declare avatar: string
 }
 
 
@@ -59,6 +60,10 @@ export default class User extends Model<InferAttributes<User>, InferCreationAttr
         nic: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        password:{
+            type:DataTypes.STRING,
+            allowNull:false
         },
         avatar: {
             type: DataTypes.TEXT('long'),
