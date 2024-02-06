@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="creating database candidate_dilshan_shivantha">
+    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="create user service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewear/middlewear.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewear/middlewear.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/user.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/My Plus/Downloads/Dataintimate-intern-assignment/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\My Plus\\Downloads\\Dataintimate-intern-assignment\\backend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/My Plus/Downloads/Dataintimate-intern-assignment/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\My Plus\\Downloads\\Dataintimate-intern-assignment\\backend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\My Plus\Downloads\Dataintimate-intern-assignment\backend" />
@@ -59,7 +63,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707195907618</updated>
-      <workItem from="1707195908842" duration="12084000" />
+      <workItem from="1707195908842" duration="18667000" />
+      <workItem from="1707227293517" duration="8340000" />
     </task>
     <task id="LOCAL-00001" summary="initialize node project">
       <created>1707196915126</created>
@@ -89,7 +94,63 @@
       <option name="project" value="LOCAL" />
       <updated>1707204672942</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add dependencies">
+      <created>1707210212812</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210212812</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add dependencies">
+      <created>1707210225837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210225837</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update index.ts file">
+      <created>1707210250862</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210250862</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update user.model.ts">
+      <created>1707210271829</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210271829</updated>
+    </task>
+    <task id="LOCAL-00009" summary="file">
+      <created>1707210279978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210279978</updated>
+    </task>
+    <task id="LOCAL-00010" summary="create middlewear">
+      <created>1707210290689</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210290689</updated>
+    </task>
+    <task id="LOCAL-00011" summary="create user routes">
+      <created>1707210306183</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210306183</updated>
+    </task>
+    <task id="LOCAL-00012" summary="create user service">
+      <created>1707210319541</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707210319541</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +160,13 @@
     <MESSAGE value="initialize node project" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="creating database candidate_dilshan_shivantha" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating database candidate_dilshan_shivantha" />
+    <MESSAGE value="add dependencies" />
+    <MESSAGE value="update index.ts file" />
+    <MESSAGE value="update user.model.ts" />
+    <MESSAGE value="file" />
+    <MESSAGE value="create middlewear" />
+    <MESSAGE value="create user routes" />
+    <MESSAGE value="create user service" />
+    <option name="LAST_COMMIT_MESSAGE" value="create user service" />
   </component>
 </project>

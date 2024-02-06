@@ -14,15 +14,20 @@ import {Sequelize} from 'sequelize'
 import express from 'express'
 import mysql from 'mysql2'
 import cors from 'cors'
+import bodyParser from "body-parser";
+import UserRoutes from "./routes/user.routes";
+import {createUserTable} from "./model/user.model";
+
+export let sequelize:Sequelize;
 
 const app = express();
-//apply cors origin policy
+// apply cors origin policy
 app.use(cors({
     origin: '*'
 }));
-
-//define routes
-//user routes
+//
+app.use(bodyParser.json());
+app.use('/user',UserRoutes);
 
 initialize()
     .then(() => console.log("database created"))
@@ -42,11 +47,13 @@ async function initialize() {
         /*
         * create connecting with sequential orm tool and mysql
         */
-        const sequelize = new Sequelize('candidate_dilshan_shivantha', 'root', '1234', {
+
+        sequelize = new Sequelize('candidate_dilshan_shivantha', 'root', '1234', {
             host: 'localhost',
             dialect: 'mysql'
         });
         const seqConnection = sequelize.authenticate();
+
         /*
          * showing success and error while connecting
          * seqConnection return the promise object
@@ -55,6 +62,7 @@ async function initialize() {
         seqConnection
             .then(() => {
                 console.log("database connection is established")
+                createUserTable();
             })
             .catch(() => {
                 console.error("can not connect database using sequelize");
@@ -65,7 +73,6 @@ async function initialize() {
     }
 }
 
-
 app.listen(8080, () => {
-    console.log("server is started success")
+    console.log("server is started ssss")
 });
