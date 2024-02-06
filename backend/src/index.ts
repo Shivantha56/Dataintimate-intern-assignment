@@ -13,9 +13,20 @@
 import {Sequelize} from 'sequelize'
 import express from 'express'
 import mysql from 'mysql2'
+import cors from 'cors'
 
 const app = express();
+//apply cors origin policy
+app.use(cors({
+    origin: '*'
+}));
+
+//define routes
+//user routes
+
 initialize()
+    .then(() => console.log("database created"))
+    .catch()
 
 async function initialize() {
     try {
@@ -25,8 +36,8 @@ async function initialize() {
             password: '1234'
         });
 
-        const result = await connection.promise().query(`CREATE DATABASE IF NOT EXISTS candidate_dilshan_shivantha`);
-        console.log(result)
+        // create database if not exists
+        await connection.promise().query(`CREATE DATABASE IF NOT EXISTS candidate_dilshan_shivantha`);
 
         /*
         * create connecting with sequential orm tool and mysql
@@ -41,17 +52,19 @@ async function initialize() {
          * seqConnection return the promise object
          * */
 
-        seqConnection.then(result => {
-            console.log(result)
-            console.log("database connection is established")
-        }).catch(result => {
-            console.error(result);
-        })
+        seqConnection
+            .then(() => {
+                console.log("database connection is established")
+            })
+            .catch(() => {
+                console.error("can not connect database using sequelize");
+            })
 
-    }catch (error) {
+    } catch (error) {
         console.error(error);
     }
 }
+
 
 app.listen(8080, () => {
     console.log("server is started success")
