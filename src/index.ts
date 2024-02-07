@@ -30,9 +30,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded())
 app.use('/user',UserRoutes);
 
+
 initialize()
-    .then(() => console.log("database created"))
-    .catch()
+
 
 async function initialize() {
     try {
