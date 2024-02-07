@@ -6,12 +6,19 @@ import {
     InferCreationAttributes,
     Sequelize
 } from "sequelize";
+// import {sequelize} from "../index";
 
-const sequelize = new Sequelize('candidate_dilshan_shivantha', 'root', '1234', {
-    host: 'localhost',
-    dialect: 'mysql'
+// const sequelize = new Sequelize('candidate_dilshan_shivantha', 'root', '1234', {
+//     host: 'localhost',
+//     dialect: 'mysql'
+// });
+
+const sequelize = new Sequelize('candidate_dilshan_shivantha', 'avnadmin', 'AVNS_jLKts7gV8QtPBd_vk-u', {
+    port:28934,
+    host: 'mysql-13f894c-kumarasiriods-37c9.a.aivencloud.com',
+    dialect: 'mysql',
+    ssl:true
 });
-
 
 // interface IUser{
 //     id ?: number

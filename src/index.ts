@@ -36,22 +36,24 @@ initialize()
 
 async function initialize() {
     try {
-        const connection = await mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: '1234'
-        });
-
-        // create database if not exists
-        await connection.promise().query(`CREATE DATABASE IF NOT EXISTS candidate_dilshan_shivantha`);
+        // const connection = await mysql.createConnection({
+        //     host: 'localhost',
+        //     user: 'root',
+        //     password: '1234'
+        // });
+        //
+        // // create database if not exists
+        // await connection.promise().query(`CREATE DATABASE IF NOT EXISTS candidate_dilshan_shivantha`);
 
         /*
         * create connecting with sequential orm tool and mysql
         */
 
-        sequelize = new Sequelize('candidate_dilshan_shivantha', 'root', '1234', {
-            host: 'localhost',
-            dialect: 'mysql'
+        sequelize = new Sequelize('candidate_dilshan_shivantha', 'avnadmin', 'AVNS_jLKts7gV8QtPBd_vk-u', {
+            port:28934,
+            host: 'mysql-13f894c-kumarasiriods-37c9.a.aivencloud.com',
+            dialect: 'mysql',
+            ssl:true
         });
         const seqConnection = sequelize.authenticate();
 
