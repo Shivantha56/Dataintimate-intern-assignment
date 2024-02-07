@@ -16,4 +16,7 @@ router.post("/token",UserController.getToken)
 
 // delete authenticated user
 router.delete("/", validateToken , UserController.deleteUser)
+
+// update authenticate user
+router.put("/", validateToken,upload.single('avatar') , UserController.updateUser)
 export default router

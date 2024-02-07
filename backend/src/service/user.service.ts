@@ -90,5 +90,35 @@ export async function deleteUser(req: express.Request, res: any) {
 
 }
 
+export async function updateUser(req: express.Request, res: any) {
+    /*
+    * validate token using custom middlewear
+    * get user id using path attribute
+    * find user is available
+    * then delete user
+    */
+    const userId = res.tokendata.id;
+    const {fName,lName,email,phoneNumber,nic,password} = req.body;
+    const user = await User.findByPk(userId);
+    if (!user){
+        return res.send("user not exists").status(500)
+    }
+
+    try {
+        const affectedCount = await User.update({fName:fName,lName:lName,email:email,phoneNumber:phoneNumber,nic:nic,password:password},{where: {id: userId}})
+        if(affectedCount[0] > 0){
+            res.status(200).send('user update success ');
+            return ;
+        }else{
+            res.status(500).send('can not update user')
+            return ;
+        }
+    }catch (e) {
+        res.status(500).send('can not update user');
+    }
+
+
+}
+
 
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="authenticate user using JWT">
+    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="delete user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewear/middlewear.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewear/middlewear.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/user.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/user.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/user.service.ts" afterDir="false" />
     </list>
@@ -62,7 +62,7 @@
       <updated>1707195907618</updated>
       <workItem from="1707195908842" duration="18667000" />
       <workItem from="1707227293517" duration="16852000" />
-      <workItem from="1707274162974" duration="3644000" />
+      <workItem from="1707274162974" duration="7290000" />
     </task>
     <task id="LOCAL-00001" summary="initialize node project">
       <created>1707196915126</created>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707244225423</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="delete user">
+      <created>1707277882160</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707277882160</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +188,7 @@
     <MESSAGE value="create user service" />
     <MESSAGE value="save user" />
     <MESSAGE value="authenticate user using JWT" />
-    <option name="LAST_COMMIT_MESSAGE" value="authenticate user using JWT" />
+    <MESSAGE value="delete user" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete user" />
   </component>
 </project>
