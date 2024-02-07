@@ -3,11 +3,12 @@ import User from "../model/user.model";
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import CustomResponse from "../dto/custome.response";
+import {where} from "sequelize";
 
 //register user
 export async function saveUser(req: express.Request, res: express.Response) {
-    console.log("register user")
-    const saltRounds = 5;
+
+    const saltRounds = 1;
     const base64Value = await req.file?.buffer.toString('base64');
     const userData = req.body;
     let encodePassword;
@@ -18,8 +19,8 @@ export async function saveUser(req: express.Request, res: express.Response) {
     });
 
     if (base64Value && encodePassword) {
+
         const user = await User.create({
-            id: undefined,
             fName: userData.fName,
             lName: userData.lName,
             email: userData.email,
@@ -30,8 +31,10 @@ export async function saveUser(req: express.Request, res: express.Response) {
 
         });
         user.password = "";
-        res.status(201).send(user)
+        return  res.status(201).send(user)
     }
+
+    res.status(500).send("can not create account")
 }
 
 //get token for user
@@ -54,15 +57,38 @@ export async function getToken(req: express.Request, res: express.Response) {
                 user.password = "";
                 // write jwt authentication for send token to the client
                 // can be applied jwt token expiration
-                const token = jwt.sign(JSON.stringify(userData), "Dilshan@###@DSDSDSDSEE@", { algorithm: 'HS256' })
-                res.status(200).send(new CustomResponse(token,userData))
+                const token = jwt.sign(JSON.stringify(userData), "Dilshan@###@DSDSDSDSEE@", {algorithm: 'HS256'})
+                res.status(200).send(new CustomResponse(token, userData))
                 return;
             }
             res.status(401).send("password does not match")
             return
         }
         res.status(404).send("user can not find")
+    }
+}
 
+export async function deleteUser(req: express.Request, res: any) {
+    /*
+    * validate token using custom middlewear
+    * get user id using path attribute
+    * find user is available
+    * then delete user
+    */
+    const userId = res.tokendata.id;
+    const user = await User.findByPk(userId);
+    if (!user){
+        return res.send("user not exists").status(500)
+    }
+
+    try {
+        await User.destroy({where: {id: userId}})
+        res.status(200).send('user delete success')
+    }catch (e) {
+        res.status(500).send('can not delete user')
     }
 
 }
+
+
+

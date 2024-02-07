@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="save user">
+    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="authenticate user using JWT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewear/middlewear.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewear/middlewear.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/user.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1707195907618</updated>
       <workItem from="1707195908842" duration="18667000" />
-      <workItem from="1707227293517" duration="16518000" />
+      <workItem from="1707227293517" duration="16852000" />
+      <workItem from="1707274162974" duration="3644000" />
     </task>
     <task id="LOCAL-00001" summary="initialize node project">
       <created>1707196915126</created>
@@ -156,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707236375120</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="authenticate user using JWT">
+      <created>1707244225423</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707244225423</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +180,7 @@
     <MESSAGE value="create user routes" />
     <MESSAGE value="create user service" />
     <MESSAGE value="save user" />
-    <option name="LAST_COMMIT_MESSAGE" value="save user" />
+    <MESSAGE value="authenticate user using JWT" />
+    <option name="LAST_COMMIT_MESSAGE" value="authenticate user using JWT" />
   </component>
 </project>
