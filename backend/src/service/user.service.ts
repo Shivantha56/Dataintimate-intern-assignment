@@ -68,6 +68,7 @@ export async function getToken(req: express.Request, res: express.Response) {
     }
 }
 
+//delete user
 export async function deleteUser(req: express.Request, res: any) {
     /*
     * validate token using custom middlewear
@@ -90,6 +91,7 @@ export async function deleteUser(req: express.Request, res: any) {
 
 }
 
+// update user
 export async function updateUser(req: express.Request, res: any) {
     /*
     * validate token using custom middlewear
