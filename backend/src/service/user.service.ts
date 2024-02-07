@@ -114,7 +114,7 @@ export async function updateUser(req: express.Request, res: any) {
             return ;
         }
     }catch (e) {
-        res.status(500).send('can not update user');
+        res.status(500).send('Internal system error');
     }
 
 
