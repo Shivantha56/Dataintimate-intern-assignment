@@ -100,6 +100,22 @@ a {
   text-decoration: none;
 }
 
+body::-webkit-slider-container{
+  background-color: red;
+}
+
+body::-webkit-scrollbar{
+  background-color: #4e73df;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #224abe;
+  border-radius: 50px;
+
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
