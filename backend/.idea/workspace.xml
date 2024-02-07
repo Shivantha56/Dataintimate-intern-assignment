@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="update user">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="74390791-506d-4763-8801-7dc96a1048a9" name="Changes" comment="debug">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,7 @@
       <updated>1707195907618</updated>
       <workItem from="1707195908842" duration="18667000" />
       <workItem from="1707227293517" duration="16852000" />
-      <workItem from="1707274162974" duration="8700000" />
+      <workItem from="1707274162974" duration="9528000" />
     </task>
     <task id="LOCAL-00001" summary="initialize node project">
       <created>1707196915126</created>
@@ -188,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707281967579</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="debug">
+      <created>1707283117875</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707283117876</updated>
+    </task>
+    <task id="LOCAL-00020" summary="debug">
+      <created>1707283285929</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1707283285929</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +222,7 @@
     <MESSAGE value="authenticate user using JWT" />
     <MESSAGE value="delete user" />
     <MESSAGE value="update user" />
-    <option name="LAST_COMMIT_MESSAGE" value="update user" />
+    <MESSAGE value="debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug" />
   </component>
 </project>
