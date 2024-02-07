@@ -1,0 +1,65 @@
+.aside-container p , ul{
+    padding: 0;
+    margin: 0;
+}
+
+.aside-container .logo-name{
+    font-size: 1rem;
+}
+.aside-container .logo-name span{
+
+}
+
+.aside-container {
+    /*width: 225px;*/
+    aspect-ratio: 1/1;
+    background: linear-gradient(180deg, #4e73df 10%, #224abe 100%)
+}
+
+.aside-container {
+    font-size: 0.8rem;
+}
+
+.aside-container ul{
+    color: rgba(255,255,255,.8);
+    list-style: none;
+}
+
+.aside-container .aside-icon{
+    color: rgba(255,255,255,.3);
+    width: 13px;
+    aspect-ratio: 1/1;
+}
+.aside-container .row-header{
+    color: rgba(255,255,255,.4);
+}
+
+.aside-container .collapse-btn{
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: rgba(255,255,255,.3);
+}
+
+.aside-container .collapse-btn > .aside-icon{
+    rotate: 90deg;
+}
+
+.aside-container .bottom-content{
+    padding: 20px;
+    background: rgba(0,0,0,.1);
+    max-width: 190px;
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+}
+
+.aside-container .bottom-content img{
+    width: 48px;
+}
+.aside-container .upgrade-btn{
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+}
