@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../assets/dashboard.css'
-import SideBar from '../component/sideBar'
+import SideBar from '../component/SideBar/sideBar'
 export default function DahBoard(){
     return (
         <>

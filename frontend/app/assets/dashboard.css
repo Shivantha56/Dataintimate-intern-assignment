@@ -42,10 +42,11 @@
     align-items: center;
     border-radius: 100%;
     background: rgba(255,255,255,.3);
+    cursor: pointer;
 }
 
 .aside-container .collapse-btn > .aside-icon{
-    rotate: 90deg;
+    rotate: -90deg;
 }
 
 .aside-container .bottom-content{
@@ -62,4 +63,80 @@
 .aside-container .upgrade-btn{
     background-color: #1cc88a;
     border-color: #1cc88a;
+}
+
+.aside-container .hover-container:hover .aside-icon{
+    color: white;
+}
+
+
+/* aside collapse */
+
+.aside-collapse{
+    background: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    font-size: 0.65rem;
+    min-height: 100vh;
+}
+
+.aside-collapse p,ul{
+    margin: 0;
+    padding: 0;
+}
+
+.aside-collapse li>p:nth-child(1){
+    color: rgba(255,255,255,.4);;
+}
+
+.aside-collapse li p {
+    color: rgba(255,255,255,.8);
+}
+
+
+.aside-collapse .aside-icon{
+    color: rgba(255,255,255,.3);
+    height: 15px;
+    aspect-ratio: 1/1;
+}
+
+.aside-collapse .bottom-content img{
+    width: 3rem;
+}
+
+.aside-collapse .collapse-btn{
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: rgba(255,255,255,.3);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.aside-collapse hr{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.aside-collapse .bottom-content{
+    padding: 20px;
+    background: rgba(0,0,0,.1);
+    max-width: 72px;
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+}
+
+.aside-collapse .upgrade-btn{
+    background-color: #1cc88a;
+    border: none;
+}
+
+.aside-collapse .collapse-btn > .aside-icon{
+    rotate: 90deg;
+}
+
+.aside-collapse .hover-container:hover .aside-icon{
+    color: white;
 }
