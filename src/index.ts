@@ -75,5 +75,5 @@ async function initialize() {
 }
 
 app.listen(8080, () => {
-    console.log("server is started ssss")
+    console.log("server is started")
 });
