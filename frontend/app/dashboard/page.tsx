@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../assets/dashboard.css'
-import SideBar from '../component/SideBar/sideBar'
+import SideBar from '../component/sideBar'
+import NavigationBar from "@/app/component/navigationBar";
 export default function DahBoard(){
     return (
         <>
@@ -10,7 +11,9 @@ export default function DahBoard(){
                     <SideBar />
                 </div>
                 <div>
-
+                    <header>
+                    <NavigationBar />
+                    </header>
                 </div>
             </section>
         </>
