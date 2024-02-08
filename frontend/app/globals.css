@@ -5,3 +5,12 @@
   margin:0;
   padding: 0;
 }
+
+ol , ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2 , h1 ,h3{
+  color: #5a5c69!important;
+}

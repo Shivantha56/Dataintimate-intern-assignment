@@ -30,8 +30,8 @@ export default function NavigationBar(){
                     </div>
                 </div>
                 <div className="vr"></div>
-                <div className={"profile-container gap-2 d-flex align-items-center position-relative"}>
-                    <p>Douglas McGee</p>
+                <div className={"profile-container column-gap-2 d-flex align-items-center position-relative"}>
+                    <p className={"m-0 p-0"}>Douglas McGee</p>
                     <div className={"d-dle justify-content-center align-items-center"}>
                         <img className={""} src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg" alt=""/>
                     </div>
