@@ -102,7 +102,9 @@ export default function SideBar(): JSX.Element {
                         </li>
 
                     </ul>
-                </div> :
+                </div>
+
+                :
 
                 <div className={"aside-collapse px-3"}>
                     <ul>
@@ -111,11 +113,11 @@ export default function SideBar(): JSX.Element {
                                              icon={faSmileWink}/>
                         </li>
                         <hr className={"text-white"}/>
-                        <li className={"row-gap-2 align-items-center text-white fw-bold d-flex flex-column align-content-center py-2"}>
+                        <li className={"row-gap-2 align-items-center text-white fw-bold d-flex flex-column align-content-center py-3"}>
                             <FontAwesomeIcon style={{width:15,height:15}} color={"#fff"}  icon={faTachometer}/>
                             <p>Dashboard</p>
                         </li>
-                        <hr className={"text-white"}/>
+                        <hr className={"text-white pb-3"}/>
                         <li className={"d-flex flex-column align-items-center"}>
                             <p className={"mb-2"}>INTERFACE</p>
                             <div className={" hover-container py-3 row-gap-1 d-flex flex-column align-items-center"}>
@@ -123,23 +125,23 @@ export default function SideBar(): JSX.Element {
                                 <p>Components</p>
                             </div>
 
-                            <div className={"py-2 row-gap-1 hover-container d-flex flex-column align-items-center gap-2"}>
+                            <div className={"py-3 row-gap-1 hover-container d-flex flex-column align-items-center gap-2"}>
                                 <FontAwesomeIcon className={"aside-icon "} icon={faWrench}/>
                                 <p>Utilities</p>
                             </div>
                         </li>
-                        <hr className={"text-white"}/>
+                        <hr className={"text-white pb-3"}/>
                         <li className={"d-flex flex-column align-items-center"}>
                             <p className={"mb-2"}>ADDONS</p>
-                            <div className={"hover-container py-2 d-flex row-gap-1 flex-column align-items-center"}>
+                            <div className={"hover-container py-3 d-flex row-gap-1 flex-column align-items-center"}>
                                 <FontAwesomeIcon className={"aside-icon"} icon={faFolder}/>
                                 <p>Pages</p>
                             </div>
-                            <div className={"py-2 hover-container d-flex row-gap-1 flex-column align-items-center"}>
+                            <div className={"py-3 hover-container d-flex row-gap-1 flex-column align-items-center"}>
                                 <FontAwesomeIcon className={"aside-icon"} icon={faChartArea}/>
                                 <p>Charts</p>
                             </div>
-                            <div className={"py-2 hover-container d-flex row-gap-1 flex-column align-items-center"}>
+                            <div className={"py-3 hover-container d-flex row-gap-1 flex-column align-items-center"}>
                                 <FontAwesomeIcon className={"aside-icon"} icon={faTable}/>
                                 <p>Tables</p>
                             </div>
